@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shout Your Heart out</title>
+    <link rel="stylesheet" href="shout.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Shout Your Heart out</h1>
+    <div class="container">
+        <div class="washer" onclick="openChat('Amogh')">
+            <img src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?size=626&ext=jpg&ga=GA1.1.1518270500.1717200000&semt=ais_user" alt="Amogh">
+            <h2>Amogh</h2>
+            <p class="status">Available Now</p>
+            <p>Price: 300 per session</p>
+            <p>Phone: XXXXXX</p>
+            <button onclick="event.stopPropagation(); addToCart('Amogh')">Pay</button>
+        </div>
+        <div class="washer" onclick="openChat('Vaisshnav')">
+            <img src="https://www.shutterstock.com/image-photo/image-handsome-smiling-young-african-260nw-722913181.jpg" alt="Vaisshnav">
+            <h2>Vaisshnav</h2>
+            <p class="status">Available Now</p>
+            <p>Price: 250 per session</p>
+            <p>Phone: XXXXXX</p>
+            <button onclick="event.stopPropagation(); addToCart('Vaisshnav')">Pay</button>
+        </div>
+        <div class="washer" onclick="openChat('Varun')">
+            <img src="https://img.freepik.com/free-photo/african-american-man-white-t-shirt_273609-14755.jpg" alt="Varun">
+            <h2>Varun</h2>
+            <p class="status">Available Soon</p>
+            <p>Price: 200 per session</p>
+            <p>Phone: XXXXXX</p>
+            <button onclick="event.stopPropagation(); addToCart('Varun')">Pay</button>
+        </div>
+        <div class="washer" onclick="openChat('Satya')">
+            <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Satya">
+            <h2>Satya</h2>
+            <p class="status">Available Soon</p>
+            <p>Price: 600 per session</p>
+            <p>Phone: XXXXXX</p>
+            <button onclick="event.stopPropagation(); addToCart('Satya')">Pay</button>
+        </div>
+        <div class="washer" onclick="openChat('Jayanth')">
+            <img src="https://media.istockphoto.com/id/1410538853/photo/young-man-in-the-public-park.webp?b=1&s=170667a&w=0&k=20&c=pGdjFVdK-_BhTa6PMy5VNcXdbxVNngzg-OPzMfJKrG8=" alt="Jayanth">
+            <h2>Jayanth</h2>
+            <p class="status">Available Soon</p>
+            <p>Price: 350 per session</p>
+            <p>Phone: XXXXXX</p>
+            <button onclick="event.stopPropagation(); addToCart('Jayanth')">Pay</button>
+        </div>
+        <div class="washer" onclick="openChat('Gopi')">
+            <img src="https://t3.ftcdn.net/jpg/03/28/19/46/360_F_328194664_RKSHvMLgHphnD1nwQYb4QKcNeEApJmqa.jpg" alt="Gopi">
+            <h2>Gopi</h2>
+            <p class="status">Available Soon</p>
+            <p>Price: 300 per session</p>
+            <p>Phone: XXXXXX</p>
+            <button onclick="event.stopPropagation(); addToCart('Gopi')">Pay</button>
+        </div>
+        <div class="washer" onclick="openChat('Jameel')">
+            <img src="https://miro.medium.com/v2/resize:fit:1056/1*fT1Ui52l50MToNrvOxLWwQ.jpeg" alt="Jameel">
+            <h2>Jameel</h2>
+            <p class="status">Available Now</p>
+            <p>Price: 100 per session</p>
+            <p>Phone: XXXXXX</p>
+            <button onclick="event.stopPropagation(); addToCart('Jameel')">Pay</button>
+        </div>
+        <div class="washer" onclick="openChat('Rupesh')">
+            <img src="https://thumbs.dreamstime.com/b/handsome-young-black-man-serious-expression-face-close-up-portrait-45080832.jpg" alt="Rupesh">
+            <h2>Rupesh</h2>
+            <p class="status">Available Soon</p>
+            <p>Price: 200 per session</p>
+            <p>Phone: XXXXXX</p>
+            <button onclick="event.stopPropagation(); addToCart('Rupesh')">Pay</button>
+        </div>
+    </div>
+
+    <div id="chat-box">
+        <header>Chat with Listener</header>
+        <div class="content"></div>
+        <div class="input">
+            <input type="text" id="chat-input" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <div id="payment-page">
+        <div class="content">
+            <h2>Payment Page</h2>
+            <p id="payment-washer"></p>
+            <input type="text" placeholder="Card Number">
+            <input type="text" placeholder="Expiry Date">
+            <input type="text" placeholder="CVV">
+            <button onclick="confirmPayment()">Pay</button>
+        </div>
+    </div>
+
+    <!-- <div id="shout-box">
+        <header>Shout Your Heart Out</header>
+        <div class="content">
+            <textarea id="shout-input" placeholder="Type your shout here..."></textarea>
+            <button onclick="sendShout()">Shout</button>
+        </div>
+    </div> -->
+
+    <script src="shout.js"></script>
+</body>
+</html>
